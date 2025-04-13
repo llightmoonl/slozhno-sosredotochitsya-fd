@@ -2,3 +2,20 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --gallery-gap: 10px;
+  --gallery-columns: 1fr;;
+  --gap-between-block: 5rem;
+  --width-headline: 100%;
+  --side-fields: 1rem;
+  --main-gap: 4rem;
+}
+
+@media screen and (width > 376px) {
+  :root {
+    --gap-between-block: 8rem;
+    --width-headline: 32%;
+    --side-fields: 2rem;
+    --main-gap: 4rem;
+  }
+}
