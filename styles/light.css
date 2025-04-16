@@ -1,24 +1,14 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  --banner-background: url('../images/cover-image-light.png');
-  --background-color: #FFF1F7;
-  --primary-color: #FF8DCB;
-  --headline-color: #353430;
-  --logo-color: #FFC2E6;
-  --button-menu-color: #353430;
-  --is-record: none;
-  --angle-color: #353430;
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    --banner-background: url('../images/cover-image-light.png');
+    --background-color: #FFF1F7;
+    --primary-color: #FF8DCB;
+    --headline-color: #353430;
+    --logo-color: #FFC2E6;
+    --button-menu-color: #353430;
+    --is-record: none;
+    --angle-color: #353430;
 }
 
 .theme-light .page {
-  background-color: var(--background-color);
+    background-color: var(--background-color);
 }
