@@ -119,11 +119,8 @@
 }
 
 .button-menu:focus-visible {
-  padding-inline: 1.3rem;
   outline: none;
-  text-decoration: underline;
-  text-underline-color: var(--button-menu-color);
-  text-underline-offset: 3px;
+  border-bottom: 1px solid currentColor;
 }
 
 .headline {
@@ -144,9 +141,14 @@
   font-weight: normal;
 }
 
-.text a {
-  filter: drop-shadow(3px 3px var(--primary-color));
+.text > a {
+  text-shadow: 3px 3px var(--primary-color);
   text-decoration: none;
+}
+
+.text > a:focus-visible {
+  outline: 1px solid currentColor;
+  border-radius: 0;
 }
 
 .title,
@@ -250,7 +252,6 @@
 
   .banner {
     grid-template-rows: 1.4fr 1fr;
-    margin-inline-start: calc(-1 * var(--side-fields));
   }
 
   .banner__logo {
@@ -267,6 +268,10 @@
 }
 
 @media screen and (width > 376px) {
+  .banner {
+    margin-inline-start: calc(-1 * var(--side-fields));
+  }
+
   .hard,
   .concentration {
     grid-template-columns: var(--width-headline) 1fr;
@@ -291,7 +296,9 @@
     border-color: rgb(from var(--button-menu-color) r g b / 40%);
   }
 
-  .text a {
+  .text > a:hover {
+    content: "";
     text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }
