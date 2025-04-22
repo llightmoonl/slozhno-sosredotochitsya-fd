@@ -118,6 +118,10 @@
   border-color: inherit;
 }
 
+.button-menu:focus {
+  outline: none;
+}
+
 .button-menu:focus-visible {
   outline: none;
   border-bottom: 1px solid currentColor;
@@ -146,9 +150,12 @@
   text-decoration: none;
 }
 
+.text > a:focus {
+  outline: none;
+}
+
 .text > a:focus-visible {
   outline: 1px solid currentColor;
-  border-radius: 0;
 }
 
 .title,
