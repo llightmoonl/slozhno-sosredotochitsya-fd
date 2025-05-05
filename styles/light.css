@@ -10,6 +10,15 @@
     --angle-color: #353430;
 }
 
-.theme-light .page {
-    background-color: var(--background-color);
+@media (prefers-color-scheme: light) {
+    :root {
+        --banner-background: url('../images/cover-image-light.png');
+        --background-color: #FFF1F7;
+        --primary-color: #FF8DCB;
+        --headline-color: #353430;
+        --logo-color: #FFC2E6;
+        --button-menu-color: #353430;
+        --is-record: none;
+        --angle-color: #353430;
+    }
 }

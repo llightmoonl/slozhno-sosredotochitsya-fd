@@ -11,7 +11,17 @@
   --angle-color: var(--primary-color);
 }
 
-.theme-dark .page {
-  background-color: var(--background-color);
-  /* Вам также нужно будет написать ряд подобных селекторов */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --banner-background: url('../images/cover-image-dark.png');
+    --background-color: #000028;
+    --primary-color: #FF0070;
+    --primary-text-color: #000028;
+    --headline-color: var(--primary-color, #FF0070);
+    --secondary-text-color: #F1B2CE;
+    --logo-color: #DB00FF;
+    --is-record: flex;
+    --button-menu-color: var(--primary-color);
+    --angle-color: var(--primary-color);
+  }
 }
