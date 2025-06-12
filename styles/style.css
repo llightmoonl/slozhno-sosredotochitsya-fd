@@ -22,7 +22,7 @@
   display: grid;
   align-items: start;
   justify-content: end;
-  grid-template-rows: 0.25fr 1fr;
+  grid-template-rows: 0.445fr 1fr;
   height: 45vh;
 }
 
