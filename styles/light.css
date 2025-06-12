@@ -2,6 +2,7 @@
     --banner-background: url('../images/cover-image-light.png');
     --background-color: #FFF1F7;
     --primary-color: #FF8DCB;
+    --primary-text-color: #353430;
     --headline-color: #353430;
     --logo-color: #FFC2E6;
     --secondary-text-color: #353430;
@@ -15,6 +16,7 @@
         --banner-background: url('../images/cover-image-light.png');
         --background-color: #FFF1F7;
         --primary-color: #FF8DCB;
+        --primary-text-color: #353430;
         --headline-color: #353430;
         --logo-color: #FFC2E6;
         --button-menu-color: #353430;
